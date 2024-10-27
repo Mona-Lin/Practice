@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=100; //經過幾百行...不小心又重複宣告
+    let a='A'; //error, let可以保護不會重新被宣告
+    //a='A'; ok, 不重複宣告，但可重新指定
+
+
+    console.clear();
+    //null vs undefined vs 空值 NaN
+    let aa=null;//塞一個值為"沒有東西的object"，有值為null
+    let bb;//沒有任何東西指定給他，沒有賦予值
+    let cc='';//空字串
+    let dd-5 * 'A'; //NaN 為非數字
+
+  </script>
+</body>
+</html>

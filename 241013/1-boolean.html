@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    a=100;
+    b=100;
+    c=200;
+    str1='AA';
+    str2='AA';
+    str3='AB';
+    strNum='200';
+
+    console.log(a==b); //true
+    console.log(a==c);//fause  不等於使用"!"否定，!=
+    console.log(a!=c);//fause
+    console.log(a!=b);//true
+
+    //===建議一律使用完全等於，嚴謹的比較!!
+    console.log(c==strNum);//true，因為==是不嚴謹的比較，不考慮資料型別(Type，如: 數字, 字串...)
+    console.log(c===strNum);//false，使用===進行完全等於比較，嚴謹包含考慮型別Type
+    console.log(c!==strNum);//true，使用===進行完全不等於比較，嚴謹包含考慮型別Type
+
+    //比較，比大小
+    d=100;
+    e=200;
+
+    console.log(d>e);//false
+    console.log(d<e);//true
+    console.log(d>=100);//true
+    console.log(e<=200);//true
+
+
+    //複合邏輯，將多個布林值組合起來的結果為何布林
+    //&& and,
+    /*  and, 都要true, 只要一個false出現，結果就是false  */
+    console.log(true && false && true); //false
+    console.log(true && true && true); //true
+
+
+    /* || or, 或者的意思，只要有一個true，結果就是true*/
+    console.log(true || false || true); //true
+    console.log(false || false || false); //false
+
+    //(true||false)&&(false||true)
+    
+
+
+
+  </script>
+</body>
+</html>
